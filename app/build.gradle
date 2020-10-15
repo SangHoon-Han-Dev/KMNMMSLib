@@ -37,7 +37,7 @@ apply plugin: 'com.android.library'
 // jitpack 테스트
 apply plugin: 'com.github.dcendents.android-maven'
 group='com.github.{SangHoon-Han-Dev}' // {groupname} 입력
-version = '0.0.1'
+//version = '1.0.1'
 
 dependencies {
     implementation 'com.google.code.gson:gson:2.3'
