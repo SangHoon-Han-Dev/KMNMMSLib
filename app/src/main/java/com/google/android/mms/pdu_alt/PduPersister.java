@@ -1395,7 +1395,9 @@ public class PduPersister {
                 for (int i = 0; i < partsNum; i++) {
                     PduPart part = body.getPart(i);
                     messageSize += part.getDataLength();
-                    persistPart(part, dummyId, preOpenedFiles);
+
+                    // TODO: 2020-10-19 에러 발생하는것 주석처리 테스트
+//                    persistPart(part, dummyId, preOpenedFiles);
 
                     // If we've got anything besides text/plain or SMIL part, then we've got
                     // an mms message with some other type of attachment.
